@@ -1,6 +1,6 @@
 # Flueconf
 
-Config fluentd in ruby
+Config fluentd in ruby.
 And featuring all programming features (variables, iterators, functions, regexp, etc) in ruby.
 
 [![Gem Version](https://badge.fury.io/rb/flueconf.svg)](https://badge.fury.io/rb/flueconf)
