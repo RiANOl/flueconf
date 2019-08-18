@@ -1,7 +1,5 @@
-require 'json'
-
 class Flueconf::Builder
-  def initialize(options = {}, &block)
+  def initialize(&block)
     @attributes = {}
     @current = @attributes
     @context = nil
@@ -88,7 +86,7 @@ class Flueconf::Builder
     end
   end
 
-  def to_fluent(*args)
-    Flueconf::Serializer.serialize(@attributes, *args)
+  def to_fluent(**options)
+    Flueconf::Serializer.serialize(@attributes, **options)
   end
 end

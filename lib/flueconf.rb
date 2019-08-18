@@ -1,6 +1,6 @@
 module Flueconf
-  def build(*args, &block)
-    Flueconf::Builder.new(*args, &block)
+  def build(&block)
+    Flueconf::Builder.new(&block)
   end
   module_function :build
 end
